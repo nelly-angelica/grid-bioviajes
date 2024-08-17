@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* displey grid */
+.containerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.2fr 20fr 1.2fr;
+  grid-template-areas: "encabezado"
+             "filtros"
+             "principal"
+             "piePagina";           
+}
+
+.encabezado {
+  grid-area: encabezado;
+  background-color: #30391f; 
+}
+
+.filtros {
+  grid-area: filtros;
+  background-color:#accc7b;
+}
+
+.principal {
+  grid-area: principal;
+  background-color: white;
+}
+
+.piePagina {
+  grid-area: piePagina;
+  background-color: #30391f;
+}
+
+/* displey flex */
+
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logoNombre {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  gap: 10px;
+}
+.principal p {
+  color: #30391f;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+.encabezado h2 {
+  font-size: 24px;
+  color: white;
+}
+
+.hamburguesa {
+  font-size: 25px;
+  color: white;
+}
+
+.nav {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  align-items: center;
+  gap: 10px;
+}
+  
+/* tipo letra */
+
+.montserrat-700 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+select {
+  padding: 10px 0px;
+  border: none;
+}
+
+
+/* estilos contenedor principal */
+
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorProductos {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 15px;
+  align-items: center;
+}
+
+.producto {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 0px 4px #668a4c;
+}
+
+.img img {
+  width: 250px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #30391f;
+  color: white;
+}
+
+button:hover {
+  background-color: #668a4c;
+}
+
+button:focus {
+  background-color: #464646;
+}
+.paginas {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+
+}
+
+.paginas li {
+  list-style-type: none;
+  border: 1px solid #accc7b;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.paginas li:hover {
+  background-color: #668a4c;
+}
+
+.piePagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+  padding-top: 15px;
+}
+
+
+.iconosFooter {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: white;
+}
+
+/* layouts escritorio */
+
+@media (min-width: 576px){
+
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    grid-template-areas: "encabezado encabezado"
+                         "filtros principal"
+                         "piePagina piePagina"                                
+  }
+  
+  .encabezado {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .logoNombre h2 {
+    font-size: 22px;
+  }
+  
+  .nav {
+    display: flex;
+  }
+   
+  .hamburguesa {
+    display: none;
+  }
+ 
+  .navList {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .navList li {
+    padding-right: 10px;
+  }
+
+  .navList a {
+    color: white;
+    align-items: start;
+    font-size: 18px;
+  }
+
+  select {
+    width: 80%;
+    padding: 6px 0px;
+  }
+
+  .contenedorProductos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.paginas {
+  padding: 5px;
+}
+
+  .piePagina {
+    background-color: #30391f;
+  }
+
+  .iconosFooter {
+    padding-top: 5px;
+  }
+
+  .iconosFooter p {
+    gap: 5px;
+  }
+}
+
+/* media queries >992px */
+
+@media (min-width: 992px){
+
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1.1fr 5fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: "encabezado filtros"
+                         "encabezado principal"
+                         "piePagina principal"                                
+  }
+  
+  .encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+  }
+
+  .logoNombre {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .logoNombre h2 {
+    font-size: 26px;
+  }
+
+  .filtros {
+    height: 85px;
+  }
+  
+  .nav {
+    display: flex;
+  }
+   
+  .hamburguesa {
+    display: none;
+  }
+ 
+  .navList {
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .navList a {
+    color: white;
+    justify-content: start;
+    font-size: 20px;
+  
+  }
+
+  .contenedorProductos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .piePagina {
+    background-color: #668a4c;
+  }
+
+}
+
+
+
+
+
+
+

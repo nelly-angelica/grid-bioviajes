@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://kit.fontawesome.com/67643ed8d8.js" crossorigin="anonymous"></script>
+  <title>Media queries</title>
+</head>
+<body> 
+    <section class="containerGrid">
+      <nav class="encabezado">
+          <div class="logoNombre">
+            <div class="logo"><i class="fa-solid fa-mountain-sun"></i></div>
+            <h2 class="montserrat-700"> Bio Viajes</h2>
+          </div>
+         <nav class="nav">
+           <ul class="navList">
+             <li><a href="#">Inicio</a></li>
+             <li><a href="#">Quienes somos</a></li>
+             <li><a href="#">Actividades</a></li>
+             <li><a href="#">Contacto</a></li>
+           </ul>
+         </nav>
+
+          <div class="hamburguesa"><i class="fa-solid fa-bars"></i></div>
+      </nav>
+    
+      <div class="filtros montserrat-400">
+      <label class="montserrat-400" for="select">Filtrar por</label>
+      <select name="" id="">
+        <option value=""> Seleccione</option>
+        <option value="1">Trekking</option>
+        <option value="2">Termas + spa</option>
+        <option value="3">Ruta del vino</option>
+        <option value="4">Ascenso volcán villarrica</option>
+        <option value="5">Canopy</option>
+        <option value="6">Cabalgatas</option>
+      </select>
+      
+      </div>
+    
+      <main class="principal">
+        <section class="contenedorProductos">
+          <div class="producto">
+            <div class="img ">
+              <img src="./css/img/trekking.jpg" alt="trekking">
+            </div>
+            <p class="montserrat-400">Trekking</p>
+            <button class="montserrat-400">Ver más</button>
+          </div>
+  
+          <div class="producto">
+            <div class="img ">
+              <img src="./css/img/termas.jpg" alt="termas">
+            </div>
+            <p class="montserrat-400">Día termas + Spa</p>
+            <button class="montserrat-400">Ver más</button>
+          </div>
+  
+          <div class="producto">
+            <div class="img ">
+              <img src="./css/img/vino.jpg" alt="ruta por viñas">
+            </div>
+            <p class="montserrat-400">Ruta del Vino</p>
+            <button class="montserrat-400">Ver más</button>
+          </div>
+  
+          <div class="producto">
+            <div class="img ">
+              <img src="./css/img/ascensoVolcan.jpg" alt="ascenso al volcan">
+            </div>
+            <p class="montserrat-400">Ascenso al Volcán</p>
+            <button class="montserrat-400">Ver más</button>
+          </div>
+  
+          <div class="producto">
+            <div class="img ">
+              <img src="./css/img/canopy.jpg" alt="canopy">
+            </div>
+            <p class="montserrat-400">Canopy</p>
+            <button class="montserrat-400">Ver más</button>
+          </div>
+  
+          <div class="producto">
+            <div class="img ">
+              <img src="./css/img/cabalgatas.png" alt="termas">
+            </div>
+            <p class="montserrat-400">Cabalgatas</p>
+            <button class="montserrat-400">Ver más</button>
+          </div>  
+        </section>
+
+        <section class="paginacion">
+          <ul class="paginas montserrat-700">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">>></a></li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="piePagina">
+      <div class="iconosFooter">
+        <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p class="montserrat-400">Todos los derechos reservados</p>   
+      </footer>
+    </section>
+</body>
+</html>
